@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+
+{% block body %}
+   
+
+{% if artical %}
+    <h4>{{artical.title}}</h4>
+    <hr>
+    Yazar : {{artical.author}}
+    <hr>
+    Tarih : {{artical.created_date}}
+    <hr>
+    {{artical.content|safe}}
+{% else %}
+    
+
+    <div class="aler alert-warning">
+        Böyle bir maale bulunmuyor
+    </div>
+
+{% endif %}
+    
+
+
+{% endblock body %}
+    

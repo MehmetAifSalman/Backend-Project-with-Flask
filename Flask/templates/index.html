@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+
+
+
+{% block body %}
+<div class="jumbotron text-center">
+    <h3>Benim Kişisel Bloğuma hoş Geldiniz </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla velit rerum ab quaerat assumenda ea, dolorum natus
+        quae doloremque sunt magni itaque quibusdam possimus ipsam libero temporibus adipisci delectus excepturi?</p>
+</div>
+
+    <ul>
+        
+        {% for i in numbers %}
+            <li style="list-style: none;">{{i}}</li>
+            
+        {% endfor %}
+            
+    </ul>
+
+
+{% endblock body %}
